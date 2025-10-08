@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://nsb0166qcnj3"]
+
+[ext_resource type="Script" uid="uid://cm5s17ks0pxaf" path="res://scripts/states/state_machine.gd" id="1_vbgj3"]
+[ext_resource type="Script" uid="uid://cggvst0uigr0q" path="res://scripts/states/player_state.gd" id="2_m7i3g"]
+[ext_resource type="Script" uid="uid://c5cbcilugdvmo" path="res://scripts/states/attack_state.gd" id="3_i31gq"]
+[ext_resource type="Script" uid="uid://dlada8km85obn" path="res://scripts/states/dead_state.gd" id="4_16u3n"]
+[ext_resource type="Script" uid="uid://dsmf8g2oa7afc" path="res://scripts/states/idle_state.gd" id="5_3qncu"]
+[ext_resource type="Script" uid="uid://bhfu0c0g0tult" path="res://scripts/states/hit_state.gd" id="6_yccq0"]
+
+[node name="StateMachine" type="Node"]
+script = ExtResource("1_vbgj3")
+
+[node name="PlayerState" type="Node" parent="."]
+script = ExtResource("2_m7i3g")
+
+[node name="AttackState" type="Node" parent="."]
+script = ExtResource("3_i31gq")
+
+[node name="DeadState" type="Node" parent="."]
+script = ExtResource("4_16u3n")
+
+[node name="IdleState" type="Node" parent="."]
+script = ExtResource("5_3qncu")
+
+[node name="HitState" type="Node" parent="."]
+script = ExtResource("6_yccq0")
